@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  background: #660033;
+  min-height: 100vh;
+  color: white;
+}
+
+.formHead::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 7px 0;
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+textarea {
+  resize: none;
+}
