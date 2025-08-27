@@ -9,12 +9,12 @@ const Layout = () => {
 
             <Navbar />
 
-            <main className="w-[90%] mx-auto">
+            <main className="my-20 w-[90%] mx-auto">
                 <Outlet />
 
                 <Toaster />
             </main>
-            
+
             <Footer />
         </>
     )
