@@ -7,6 +7,7 @@ import NonProtected from "./components/NonProtected"
 import Home from "./components/Home/Home"
 import ProtectedRoute from "./components/ProtectedRoute"
 import HomeLayout from "./components/HomeLayout/HomeLayout"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 
 
@@ -14,7 +15,7 @@ import HomeLayout from "./components/HomeLayout/HomeLayout"
 
 const routes = createBrowserRouter([
   {
-    path: ``, element: <Layout />, children: [
+    element: <Layout />, children: [
       { path: 'login', element: <NonProtected> <Login /> </NonProtected> },
       { path: 'register', element: <NonProtected> <Register /> </NonProtected> },
       { path: '*', element: <div>404</div> },
@@ -31,6 +32,7 @@ const routes = createBrowserRouter([
 
 
 
+const queryClient = new QueryClient()
 
 
 const App = () => {
@@ -38,9 +40,17 @@ const App = () => {
   return (
 
 
+
+
+
+
     <AuthContextProvider>
 
-      <RouterProvider router={routes} />
+      <QueryClientProvider client={queryClient}>
+
+        <RouterProvider router={routes} />
+
+      </QueryClientProvider>
 
     </AuthContextProvider>
 

@@ -61,7 +61,7 @@ const Login = () => {
             localStorage.setItem('token', res.data.token)
 
             // show success message
-            toast.success(res.data.message);
+            toast.success(res.data.message, {position: 'bottom-right'});
 
             // redirect to home
             setTimeout(() => {

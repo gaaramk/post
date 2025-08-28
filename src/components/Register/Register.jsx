@@ -76,7 +76,7 @@ const Register = () => {
         axios.post(`https://linked-posts.routemisr.com/users/signup`, values).then((res) => {
 
 
-            toast.success(res.data.message)
+            toast.success(res.data.message, { position: 'bottom-right' });
 
 
             setTimeout(() => {
