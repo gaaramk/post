@@ -134,7 +134,6 @@ const Post = ({ post }) => {
                         hover:text-gray-400 capitalize"
                         >
                             view all comments...
-                            sss
                         </p>
 
                         {/* add comment */}
