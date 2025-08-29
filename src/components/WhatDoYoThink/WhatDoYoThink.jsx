@@ -4,6 +4,7 @@ import image from '../../assets/images/userProfile.jpg'
 const WhatDoYoThink = () => {
     const [open, setOpen] = useState(false)
 
+    // open modal
     const handleOpen = () => {
         setOpen(!open)
         console.log(open);

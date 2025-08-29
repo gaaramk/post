@@ -7,7 +7,7 @@ import { getAllPosts } from "../../lib/api"
 const Home = () => {
 
 
-    const { data, isLoading, error, isError, refetch } = useQuery({
+    const { data, isLoading, error, isError } = useQuery({
         queryKey: ["allPosts"],
         queryFn: getAllPosts,
         gcTimeout: 1000 * 60 * 3,

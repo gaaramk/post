@@ -12,3 +12,8 @@ const headers = {
 export const getAllPosts = () => {
   return axios.get(baseUrl + "/posts?limit=10", { headers });
 };
+
+// get single post
+export const getSinglePost = (id) => {
+  return axios.get(baseUrl + `/posts/${id}`, { headers });
+};

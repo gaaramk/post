@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import UserCard from "../UserCard/UserCard"
 import OptionSide from "../OptionSide/OptionSide"
 import Navbar from "../Navbar/Navbar"
+import { Toaster } from "react-hot-toast"
 
 
 const HomeLayout = () => {
@@ -18,6 +19,8 @@ const HomeLayout = () => {
 
                     <div className="col-span-12 lg:col-span-6">
                         <Outlet />
+                        <Toaster />
+
                     </div>
 
                     <div className="hidden lg:block lg:col-span-3">

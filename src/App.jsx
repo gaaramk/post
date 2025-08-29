@@ -8,6 +8,7 @@ import Home from "./components/Home/Home"
 import ProtectedRoute from "./components/ProtectedRoute"
 import HomeLayout from "./components/HomeLayout/HomeLayout"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import PostDetails from "./components/PostDetails/PostDetails"
 
 
 
@@ -18,6 +19,7 @@ const routes = createBrowserRouter([
     element: <Layout />, children: [
       { path: 'login', element: <NonProtected> <Login /> </NonProtected> },
       { path: 'register', element: <NonProtected> <Register /> </NonProtected> },
+      { path: 'post/:id', element: <ProtectedRoute> <PostDetails /> </ProtectedRoute> },
       { path: '*', element: <div>404</div> },
     ]
   }, // route
