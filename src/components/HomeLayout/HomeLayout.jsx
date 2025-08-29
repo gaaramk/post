@@ -13,7 +13,7 @@ const HomeLayout = () => {
             <main>
                 <div className="p-2 grid grid-cols-12 gap-5 text-center">
 
-                    <div className="hidden lg:block lg:col-span-3">
+                    <div className="hidden xl:block xl:col-span-3">
                         <UserCard />
                     </div>
 
@@ -23,7 +23,7 @@ const HomeLayout = () => {
 
                     </div>
 
-                    <div className="hidden lg:block lg:col-span-3">
+                    <div className="hidden xl:block xl:col-span-3">
                         <OptionSide />
                     </div>
                 </div>
