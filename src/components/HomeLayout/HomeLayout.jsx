@@ -17,7 +17,7 @@ const HomeLayout = () => {
                         <UserCard />
                     </div>
 
-                    <div className="col-span-12 lg:col-span-6">
+                    <div className="col-span-12 xl:col-span-6">
                         <Outlet />
                         <Toaster />
 
